@@ -1,0 +1,261 @@
+/* ==UserStyle==
+@name           Quietfox
+@description    A minimalist Zen & Firefox userChrome style that streamlines context menus for a cleaner, distraction-free browsing experience.
+@version        1.0.0
+@author         Zain Khan
+==/UserStyle== */
+
+/* -----------------------------------------------------------------------------
+   HOW TO USE THIS FILE (userChrome.css)
+   -----------------------------------------------------------------------------
+
+   1. PLACE THIS FILE:
+      - Save this file as `userChrome.css` inside a folder named `chrome`
+        in your browser's profile directory.
+      - To find your profile directory:
+        • Type `about:support` in the address bar.
+        • Click "Open Folder" next to "Profile Folder".
+        • Create a `chrome` folder if it doesn’t already exist.
+
+   2. ENABLE CUSTOM STYLESHEETS:
+      - In the address bar, go to `about:config`
+      - Search for: `toolkit.legacyUserProfileCustomizations.stylesheets`
+      - Set its value to `true`
+
+   3. OPTIONAL – ENABLE LIVE EDITING (for developers/debugging):
+      - In `about:config`, enable the following settings:
+        • `devtools.chrome.enabled` → true
+        • `devtools.debugger.remote-enabled` → true
+      - Press ⌘+⇧+⌥+I (Mac) or Ctrl+Shift+Alt+I (Windows/Linux)
+        to open the Developer Tools
+      - Go to the "Style Editor" tab and open `userChrome.css` for live editing
+
+   4. APPLY CHANGES:
+      - Restart your browser to see your custom styles in effect.
+
+----------------------------------------------------------------------------- */
+
+/* Start adding your custom CSS rules below */
+
+
+
+/* -----------------------------------------------------------------------------
+   OPTIONAL: HIDE CONTEXT MENU ITEMS (Tab Context Menu Customization)
+   -----------------------------------------------------------------------------
+
+   Below is a list of context menu item IDs that can be hidden by setting
+   them to `display: none !important;`.
+
+   To hide specific items, uncomment the relevant lines below.
+
+   You can also hide *all* of them by uncommenting the full block at the bottom.
+----------------------------------------------------------------------------- */
+
+#context_openANewTab,
+#context_toggleMuteTab,
+#context_toggleMuteSelectedTabs,
+/* #context_zen-add-essential, */
+/* #context_zen-remove-essential, */
+/* #context_pinTab, */
+/* #context_unpinTab, */
+#context_pinSelectedTabs,
+#context_unpinSelectedTabs,
+#context_unloadTab,
+/* #context_zenSplitTabs, */
+#context_duplicateTab,
+#context_duplicateTabs,
+#context_askChat,
+#context_bookmarkSelectedTabs,
+#context_bookmarkTab,
+#context_moveTabOptions,
+/* #context-zen-change-workspace-tab, */
+/* #context_sendTabToDevice, */
+/* #context_reopenInContainer, */
+#context_selectAllTabs,
+#context_closeTab,
+#context_closeDuplicateTabs,
+#context_closeTabOptions,
+#context_undoCloseTab
+/* #context_fullscreenAutohide, */
+/* #context_fullscreenExit, */
+/* #context_zen-pinned-tab-separator, */
+/* #context_zen-replace-pinned-url-with-current, */
+/* #context_zen-reset-pinned-tab */
+{
+    display: none !important;
+}
+
+#tabContextMenu > menuseparator:nth-of-type(1) {
+    display: none !important;
+}
+
+#tabContextMenu > menuseparator:nth-of-type(4) {
+    display: none !important;
+}
+
+
+
+/* -----------------------------------------------------------------------------
+    OPTIONAL: HIDE TOOLBAR CONTEXT MENU ITEMS
+    -----------------------------------------------------------------------------
+
+    Below is a list of toolbar context menu item IDs that can be hidden by
+    setting them to `display: none !important;`.
+
+    To hide specific items, uncomment the relevant lines below.
+----------------------------------------------------------------------------- */
+
+#toolbar-context-openANewTab,
+/* #zen-context-menu-new-folder-toolbar, */
+#toolbar-context-reloadSelectedTab,
+/* #toolbar-context-reloadSelectedTabs, */
+#toolbar-context-bookmarkSelectedTab,
+#toolbar-context-bookmarkSelectedTabs,
+#toolbar-context-selectAllTabs,
+/* #toolbar-context-undoCloseTab, */
+/* #toolbar-context-customize-sidebar, */
+/* #toolbar-context-toggle-vertical-tabs, */
+/* #toolbar-context-move-to-panel, */
+/* #toolbar-context-autohide-downloads-button, */
+/* #toolbar-context-always-show-extensions-button, */
+/* #toolbar-context-remove-from-toolbar, */
+/* #toolbar-context-pin-to-toolbar, */
+/* #toolbar-context-always-open-downloads-panel, */
+/* #zen-context-menu-compact-mode-toggle, */
+/* #zen-context-menu-compact-mode, */
+/* #zen-toolbar-context-tabs-right, */
+#zenToolbarThemePicker
+/* #toolbar-context-customize, */
+/* #toolbar-context-full-screen-autohide, */
+/* #toolbar-context-full-screen-exit */
+{
+    display: none !important;
+}
+
+
+
+/* -----------------------------------------------------------------------------
+    OPTIONAL: HIDE CONTEXT MENU ITEMS (Page Context Menu Customization)
+    -----------------------------------------------------------------------------
+    Below is a list of context menu item IDs that can be hidden by setting
+    them to `display: none !important;`.
+    
+    To hide specific items, uncomment the relevant lines below.
+    ----------------------------------------------------------------------------- */
+#context-back,
+#context-forward,
+#context-reload,
+#context-stop,
+/* #context-viewsource-goToLine, */
+/* #context-viewsource-wrapLongLines, */
+/* #context-viewsource-highlightSyntax, */
+/* #spell-no-suggestions, */
+/* #spell-add-to-dictionary, */
+/* #spell-undo-add-to-dictionary, */
+/* #context-openlinkincurrent, */
+/* #context-openlinkincontainertab, */
+/* #context-openlinkintab, */
+/* #context-openlinkinusercontext-popup, */
+/* #context-openlink, */
+/* #context-openlinkprivate, */
+/* #context-previewlink, */
+/* #context-zenSplitLink, */
+#context-bookmarklink,
+/* #context-savelink, */
+/* #context-copyemail, */
+/* #context-copyphone, */
+/* #context-copylink, */
+/* #context-stripOnShareLink, */
+#context-sendlinktodevice-popup,
+/* #context-media-play, */
+/* #context-media-pause, */
+/* #context-media-mute, */
+/* #context-media-unmute, */
+/* #context-media-playbackrate-050x, */
+/* #context-media-loop, */
+/* #context-leave-dom-fullscreen, */
+/* #context-video-fullscreen, */
+/* #context-media-hidecontrols, */
+/* #context-media-showcontrols, */
+/* #context-viewvideo, */
+/* #context-video-pictureinpicture, */
+/* #context-reloadimage, */
+/* #context-viewimage, */
+/* #context-saveimage, */
+/* #context-video-saveimage, */
+/* #context-savevideo, */
+/* #context-saveaudio, */
+/* #context-copyimage-contents, */
+/* #context-copyimage, */
+/* #context-copyvideourl, */
+/* #context-copyaudiourl, */
+/* #context-sendimage, */
+/* #context-sendvideo, */
+/* #context-sendaudio, */
+/* #context-imagetext, */
+/* #context-viewimageinfo, */
+/* #context-viewimagedesc, */
+/* #context-setDesktopBackground, */
+#context-bookmarkpage,
+#context-savepage,
+#context-sendpagetodevice,
+#context-sendpagetodevice-popup,
+/* #fill-login-popup, */
+/* #fill-login-generated-password, */
+/* #use-relay-mask, */
+/* #manage-saved-logins, */
+/* #context-undo, */
+/* #context-redo, */
+/* #context-cut, */
+/* #context-copy, */
+/* #context-paste, */
+/* #context-paste-no-formatting, */
+/* #context-delete, */
+/* #context-selectall, */
+/* #context-pdfjs-highlight-selection, */
+/* #context-reveal-password, */
+/* #context-print-selection, */
+/* #context-copy-link-to-highlight, */
+/* #context-copy-clean-link-to-highlight, */
+/* #context-remove-highlight, */
+/* #context-pdfjs-undo, */
+/* #context-pdfjs-redo, */
+/* #context-pdfjs-cut, */
+/* #context-pdfjs-copy, */
+/* #context-pdfjs-paste, */
+/* #context-pdfjs-delete, */
+/* #context-pdfjs-selectall, */
+/* #context-take-screenshot, */
+/* #context-keywordfield, */
+/* #context-add-engine, */
+/* #context-searchselect, */
+/* #context-searchselect-private, */
+/* #context-translate-selection, */
+/* #context-ask-chat, */
+/* #context-showonlythisframe, */
+/* #context-openframeintab, */
+/* #context-openframe, */
+/* #context-reloadframe, */
+/* #context-bookmarkframe, */
+/* #context-saveframe, */
+/* #context-printframe, */
+/* #context-viewframesource, */
+/* #context-viewframeinfo, */
+/* #spell-check-enabled, */
+/* #spell-add-dictionaries-main, */
+/* #spell-dictionaries-menu, */
+/* #spell-add-dictionaries, */
+/* #context-bidi-text-direction-toggle, */
+/* #context-bidi-page-direction-toggle, */
+/* #context-viewpartialsource-selection, */
+#context-viewsource,
+#context-inspect-a11y
+/* #context-inspect, */
+/* #context-media-eme-learnmore, */
+{
+    display: none !important;
+}
+
+#contentAreaContextMenu > menuseparator:nth-of-type(1) {
+    display: none !important;
+}
