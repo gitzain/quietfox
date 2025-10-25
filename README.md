@@ -2,19 +2,20 @@
 A minimalist Zen Firefox userChrome style that streamlines context menus for a cleaner, distraction-free browsing experience.
 
 ## Table of Contents
-- [Motivation](#motivation)
-- [Installation & Usage](#installation--usage)
-- [Contributing](#contributing)
-- [History](#history)
-- [Credits](#credits)
-- [License](#license)
+- [Motivation](#bulb-motivation)
+- [Screenshots](#computer-screenshots)
+- [Installation & Usage](#rocket-installation--usage)
+- [Contributing](#handshake-contributing)
+- [History](#scroll-history)
+- [Credits](#clap-credits)
+- [License](#receipt-license)
 
-## 💡 Motivation
+## :bulb: Motivation
 Quietfox is designed to simplify and declutter Firefox’s interface, giving users a minimalist browsing experience. By hiding rarely used context menu items and toolbar elements, it reduces distractions and streamlines common workflows.
 
 The style targets Zen-like productivity, making your Firefox environment feel cleaner and more focused without altering core functionality.
 
-## 🚀 Installation & Usage
+## :rocket: Installation & Usage
 1. Locate your Firefox profile folder:  
    - Type `about:support` in the address bar.  
    - Click **Open Folder** next to "Profile Folder".  
@@ -34,19 +35,19 @@ The style targets Zen-like productivity, making your Firefox environment feel cl
 
 5. Restart Firefox to apply the changes.
 
-## 🤝 Contributing
+## :handshake: Contributing
 1. Fork it!
 2. Create your feature branch: `git checkout -b my-new-feature`
 3. Commit your changes: `git commit -m 'Added some feature'`
 4. Push to the branch: `git push origin my-new-feature`
 5. Submit a pull request :D
 
-## 📜 History
+## :scroll: History
 07/10/25: v1 published to github.  
 
-## 👏 Credits
+## :clap: Credits
 - Created by <a href="https://iamzain.com">Zain Khan</a>
 - Template for this README is <a href="https://github.com/gitzain/template-README">template-readme</a> created by <a href="https://iamzain.com">Zain Khan</a>
 
-## 🧾 License
+## :receipt: License
 See the LICENSE file in this project's directory.
