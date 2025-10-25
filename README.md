@@ -3,7 +3,6 @@ A minimalist Zen Firefox userChrome style that streamlines context menus for a c
 
 ## Table of Contents
 - [Motivation](#bulb-motivation)
-- [Screenshots](#computer-screenshots)
 - [Installation & Usage](#rocket-installation--usage)
 - [Contributing](#handshake-contributing)
 - [History](#scroll-history)
